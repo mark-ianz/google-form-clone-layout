@@ -1,0 +1,27 @@
+.container {
+    width: 642px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    gap: 15px;
+}
+
+.banner-container,.information-container, .input-container {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, .4);
+    border-radius: 8px;
+}
+
+.banner-container,.banner {
+    width: 640px;
+}
+
+.input-container {
+    padding: 24px;
+}
+
+.banner-container,.information-container,.input-container {
+    background-color: white;
+}

@@ -1,0 +1,42 @@
+.input-name {
+    margin-bottom: 20px;
+}
+
+.input-text,.input-text-long,.input-date {
+    font-family: Roboto;
+    border-style: solid;
+    border-color: #dadce0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    padding-bottom: 5px;
+    width: 270px;
+    outline: none;
+    transition: border-color 200ms, border-width 200ms;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-text:focus, .input-text-long:focus {
+    border-color: rgb(7, 129, 104);
+    border-width: 2px;
+}
+
+.input-text-long {
+    width: 100%;
+}
+
+.input-date {
+    width: 127px;
+}
+
+.asterisk {
+    color: rgb(217,48,37);
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

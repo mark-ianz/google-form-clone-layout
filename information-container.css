@@ -1,0 +1,57 @@
+.title {
+    display: flex;
+    margin: 0;
+}
+
+.title-text {
+    font-family: Roboto, Arial;
+    font-weight: 400;
+    font-size: 24pt;
+    margin: 0;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.google-account-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.google-account {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #5f6368;
+}
+
+.account-and-switch-account {
+    display: flex;
+    flex-direction: row;
+    color: #1a73e8;
+}
+
+.autosave-icon-container {
+    margin-left: 270px;
+}
+
+.autosave-icon {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.filler {
+    color: #5f6368;
+}
+
+.required {
+    color: rgb(217,48,37);
+}
