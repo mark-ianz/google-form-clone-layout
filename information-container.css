@@ -38,6 +38,10 @@
     color: #1a73e8;
 }
 
+.switch-account {
+    cursor: pointer;
+}
+
 .autosave-icon-container {
     margin-left: 270px;
 }
