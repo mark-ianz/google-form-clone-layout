@@ -7,16 +7,18 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="information-container.css">
+        <link rel="stylesheet" href="option.css" />
+        <link rel="stylesheet" href="input.css" />
+        <link rel="stylesheet" href="information-container.css" />
         <link rel="stylesheet" href="containers.css" />
         <link rel="stylesheet" href="general.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="other-information.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Bootleg Google Forms</title>
     </head>
     <body>
-        <div>
+        <div class="big-box">
             <div class="container">
                 <div class="banner-container">
                     <img
@@ -45,7 +47,13 @@
                             <p class="google-account">
                                 bustillomarkian23@gmail.com
                             </p>
-                            <p class="switch-account">Switch Account</p>
+                            <a
+                                href="https://accounts.google.com/v3/signin/identifier?ifkv=AXo7B7Vwg_9mg1jtOzpJ_tefFJA9mIrnYc8zDat6ZRQL0so_5h0H9G8awwjO8PJUpPLJTP2atC4W4A&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1827924156%3A1690962350909840"
+                                class="switch-account"
+                                target="_blank"
+                            >
+                                Switch Account
+                            </a>
                         </div>
                         <div class="autosave-icon-container">
                             <img
@@ -73,16 +81,25 @@
                         <p class="input-name">
                             Email <span class="asterisk">*</span>
                         </p>
-                        <input type="text" class="input-text" placeholder="Your Answer">
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
                 <!-- Full Name -->
                 <div class="input-container">
                     <div class="input-box">
                         <p class="input-name">
-                            Full Name (Last, First Name, Middle Name) <span class="asterisk">*</span>
+                            Full Name (Last, First Name, Middle Name)
+                            <span class="asterisk">*</span>
                         </p>
-                        <input type="text" class="input-text" placeholder="Your Answer">
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
                 <!-- Student No. -->
@@ -91,16 +108,25 @@
                         <p class="input-name">
                             Student No. <span class="asterisk">*</span>
                         </p>
-                        <input type="text" class="input-text" placeholder="Your Answer">
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
                 <!-- Address -->
                 <div class="input-container">
                     <div class="input-box">
                         <p class="input-name">
-                            Address ( In Complete Detail) <span class="asterisk">*</span>
+                            Address ( In Complete Detail)
+                            <span class="asterisk">*</span>
                         </p>
-                        <input type="text" class="input-text-long" placeholder="Your Answer">
+                        <input
+                            type="text"
+                            class="input-text-long"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
                 <!-- Phone Number -->
@@ -109,7 +135,11 @@
                         <p class="input-name">
                             Phone number <span class="asterisk">*</span>
                         </p>
-                        <input type="text" class="input-text" placeholder="Your Answer">
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
                 <!-- Birthday -->
@@ -118,29 +148,239 @@
                         <p class="input-name">
                             Birthday <span class="asterisk">*</span>
                         </p>
-                        <input type="date" class="input-date" placeholder="Your Answer">
+                        <input
+                            type="date"
+                            class="input-date"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
+                <!-- Age -->
                 <div class="input-container">
                     <div class="input-box">
                         <p class="input-name">
                             Age <span class="asterisk">*</span>
                         </p>
-                        <input type="text" class="input-text" placeholder="Your Answer">
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
                     </div>
                 </div>
+                <!-- Sex -->
                 <div class="input-container">
                     <div class="input-box">
                         <p class="input-name">
                             Sex <span class="asterisk">*</span>
                         </p>
                         <div class="radio-container">
-                            <input type="radio" name="Male" class="option">
-                            <input type="radio" name="Female" class="option">
-                            <input type="radio" name="Prefer not to say" class="option">
+                            <label class="option" for="male">
+                                <input type="radio" name="sex" id="male" />
+                                Male
+                            </label>
+                            <label class="option" for="female">
+                                <input type="radio" name="sex" id="female" />
+                                Female
+                            </label>
+                            <label class="option" for="pfn">
+                                <input type="radio" name="sex" id="pfn" />
+                                Prefer not to say
+                            </label>
                         </div>
                     </div>
                 </div>
+                <!-- Campus -->
+                <div class="input-container">
+                    <div class="input-box">
+                        <p class="input-name">
+                            Campus <span class="asterisk">*</span>
+                        </p>
+                        <div class="radio-container">
+                            <label class="option" for="sbc">
+                                <input type="radio" name="campus" id="sbc" />
+                                San Bartolome
+                            </label>
+                            <label class="option" for="sfc">
+                                <input type="radio" name="campus" id="sfc" />
+                                San Francisco Campus
+                            </label>
+                            <label class="option" for="bc">
+                                <input type="radio" name="campus" id="bc" />
+                                Batasan Campus
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Year -->
+                <div class="input-container">
+                    <div class="input-box">
+                        <p class="input-name">
+                            Year <span class="asterisk">*</span>
+                        </p>
+                        <div class="radio-container">
+                            <label class="option" for="1st-year">
+                                <input type="radio" name="year" id="1st-year" />
+                                1st year
+                            </label>
+                            <label class="option" for="2nd-year">
+                                <input type="radio" name="year" id="2nd-year" />
+                                2nd year
+                            </label>
+                            <label class="option" for="3rd-year">
+                                <input type="radio" name="year" id="3rd-year" />
+                                3rd year
+                            </label>
+                            <label class="option" for="4th-year">
+                                <input type="radio" name="year" id="4th-year" />
+                                4th year
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program -->
+                <div class="input-container">
+                    <div class="input-box">
+                        <p class="input-name">
+                            Program <span class="asterisk">*</span>
+                        </p>
+                        <div class="radio-container">
+                            <label class="option" for="bs-entrep">
+                                <input
+                                    type="radio"
+                                    name="program"
+                                    id="bs-entrep"
+                                />
+                                BS Entrepreneurship
+                            </label>
+                            <label class="option" for="bs-acc">
+                                <input
+                                    type="radio"
+                                    name="program"
+                                    id="bs-acc"
+                                />
+                                BS Accountancy
+                            </label>
+                            <label class="option" for="bs-electronics-engr">
+                                <input
+                                    type="radio"
+                                    name="program"
+                                    id="bs-electronics-engr"
+                                />
+                                BS Electronics Engineering
+                            </label>
+                            <label class="option" for="bs-industrial-engr">
+                                <input
+                                    type="radio"
+                                    name="program"
+                                    id="bs-industrial-engr"
+                                />
+                                BS Industrial Engineering
+                            </label>
+                            <label class="option" for="bs-it">
+                                <input type="radio" name="program" id="bs-it" />
+                                BS Information Technology
+                            </label>
+                            <label class="option" for="bs-management-acc">
+                                <input
+                                    type="radio"
+                                    name="program"
+                                    id="bs-management-acc"
+                                />
+                                BS Management Accountancy
+                            </label>
+                            <label class="option" for="beced">
+                                <input type="radio" name="program" id="beced" />
+                                Bachelor of Early Childhood Education
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Name of Parents/Guardian -->
+                <div class="input-container">
+                    <div class="input-box">
+                        <p class="input-name">
+                            Name of Parents/Guardian
+                            <span class="asterisk">*</span>
+                        </p>
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
+                    </div>
+                </div>
+                <!-- Contact number of guardian -->
+                <div class="input-container">
+                    <div class="input-box">
+                        <p class="input-name">
+                            Contact number of guardian
+                            <span class="asterisk">*</span>
+                        </p>
+                        <input
+                            type="text"
+                            class="input-text"
+                            placeholder="Your Answer"
+                        />
+                    </div>
+                </div>
+                <!-- 1x1 Picture -->
+                <div class="input-container">
+                    <div class="input-box">
+                        <p class="input-name">
+                            1x1 picture <span class="asterisk">*</span>
+                        </p>
+                        <button class="add-file-button">
+                            <div class="upload-button-container">
+                                <img
+                                    src="./images/upload.png"
+                                    class="upload-icon"
+                                />
+                                <p class="add-file">Add file</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-container">
+                <div class="submit">
+                    <button class="submit-button">Submit</button>
+                </div>
+                <div class="clear-form-container">
+                    <a href="./index.html" class="clear-form"> Clear form </a>
+                </div>
+            </div>
+            <div class="password-warning-container">
+                <p class="warning-text">
+                    Never submit passwords through Google Forms.
+                </p>
+            </div>
+            <div class="other-information">
+                <div class="report-abuse-container">
+                    <p class="warning-text">
+                        This form was created inside of Quezon City University.
+                        <a
+                            href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe8TgMGOIshh0PI6rb108EtqcrtTQSE60c0LeRuweoiRiuYrw/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSe8TgMGOIshh0PI6rb108EtqcrtTQSE60c0LeRuweoiRiuYrw/viewform"
+                            class="warning-text"
+                            target="_blank"
+                        >
+                            Report Abuse
+                        </a>
+                    </p>
+                </div>
+                <a
+                    href="https://www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms"
+                    target="_blank"
+                    class="forms"
+                >
+                    <div class="google-forms">
+                        <img
+                            src="./images/google-logo.svg"
+                            class="google-logo"
+                        />
+                        <p class="forms">Forms</p>
+                    </div>
+                </a>
             </div>
         </div>
     </body>

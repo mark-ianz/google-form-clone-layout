@@ -35,15 +35,18 @@
 .account-and-switch-account {
     display: flex;
     flex-direction: row;
-    color: #1a73e8;
+    align-items: center;
 }
 
 .switch-account {
-    cursor: pointer;
+    color: #1a73e8;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 14px;
 }
 
 .autosave-icon-container {
-    margin-left: 270px;
+    margin-left: 264px;
 }
 
 .autosave-icon {

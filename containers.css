@@ -1,10 +1,16 @@
-.container {
+.big-box {
     width: 642px;
     display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .banner-container,.information-container, .input-container {
@@ -24,4 +30,34 @@
 
 .banner-container,.information-container,.input-container {
     background-color: white;
+}
+
+.submit-container {
+    width: 642px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.upload-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.password-warning-container {
+    margin-bottom: 12px;
 }

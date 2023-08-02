@@ -1,15 +1,29 @@
 body {
     margin: 0;
-    background-color: rgb(230, 239, 241)
+    background-color: rgb(230, 239, 241);
+    padding: 15px;
 }
 
 p {
     margin: 0px;
     font-family: Roboto;
     line-height: 20px;
+    font-size: 14.6px;
 }
 
 .hr {
     border-top: 1px solid #dadce0;
     width: 100%;
+}
+
+input[type="radio"] {
+    transform: scale(1.7);
+    border-style: solid;
+    cursor: pointer;
+}
+
+.warning-text {
+    font-family: Roboto;
+    color: rgb(112, 117, 122);
+    font-size: 12px;
 }
