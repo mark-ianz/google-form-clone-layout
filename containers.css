@@ -63,13 +63,7 @@
 }
 
 @media (max-width:660px) {
-    .big-box {
-        width: 400px;
-    }
-    .banner-container {
-        width: 400px;
-    }
-    .banner {
+    .big-box, .banner, .banner-container,.submit-container {
         width: 400px;
     }
 }
