@@ -64,6 +64,6 @@
 
 @media (max-width:660px) {
     .big-box, .banner, .banner-container,.submit-container {
-        width: 400px;
+        width: 350px;
     }
 }
