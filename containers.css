@@ -61,3 +61,15 @@
 .password-warning-container {
     margin-bottom: 12px;
 }
+
+@media (max-width:660px) {
+    .big-box {
+        width: 400px;
+    }
+    .banner-container {
+        width: 400px;
+    }
+    .banner {
+        width: 400px;
+    }
+}
