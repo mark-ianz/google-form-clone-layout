@@ -51,7 +51,7 @@
 
 @media (max-width:660px) {
     .autosave-icon-container {
-        margin-left: 80px;
+        margin-left: 60px;
     }
     .account-and-switch-account {
         flex-direction: column;
